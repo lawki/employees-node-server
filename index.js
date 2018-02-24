@@ -40,6 +40,16 @@ app.get('/api/employee/:id',(req,res)=>{
     });
 });
 
+app.post('/api/add_employee',(req,res)=>{
+    employeeApi.saveEmployee(req.body.employee,(err,employee)=>{
+        if(err){
+            res.json({message:"Error"+err});
+        }else{
+            res.json({message:"success"});
+        }
+    });
+});
+
 app.listen(3000,function(){
     console.log('server started...')
 })

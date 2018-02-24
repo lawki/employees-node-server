@@ -29,7 +29,7 @@ module.exports = {
     {
       "id": 6,
       "name": "Anay",
-      "motto": "NaN error occured"
+      "motto": "a Na N error occured,geddit?"
     },
     {
       "id": 7,

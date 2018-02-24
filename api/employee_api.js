@@ -30,10 +30,10 @@ module.exports = {
 		currentID = currentID + 1;
     	employee.id = currentID;
     	employees.push(employee);
-		callback(null, _clone(comment));
+		callback(null, _clone(employee));
 	},
 	deleteEmployeeById: function(id, callback) {
-		_.remove(comments, { id: parseInt(id)});
+		_.remove(employees, { id: parseInt(id)});
     callback(null);
 	}
 };
